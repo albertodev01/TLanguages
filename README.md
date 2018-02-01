@@ -35,6 +35,7 @@ Now you have finished the setup and you can start using the component. This code
 ``` pascal
 procedure TForm1.FormCreate(Sender: TObject);
 begin
+  //The 'jsonResourceId' is the Identifier I was talking about on point number 3
   Language1.setSource('jsonResourceId');
   Language1.setLanguage('Default');
 end;
