@@ -1,0 +1,583 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'TLanguages Editor'
+  ClientHeight = 501
+  ClientWidth = 593
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object TopBar: TRectangle
+    Align = Top
+    Fill.Color = xFF222222
+    Size.Width = 593.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object Label1: TLabel
+      Align = Client
+      StyledSettings = [Family, Style]
+      Size.Width = 593.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 18.000000000000000000
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Center
+      Text = 'TLanguage Editor'
+      TabOrder = 0
+    end
+  end
+  object Layout1: TLayout
+    Align = Top
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Position.X = 5.000000000000000000
+    Position.Y = 105.000000000000000000
+    Size.Width = 583.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    object Browse: TButton
+      Align = Right
+      Images = ImageList
+      ImageIndex = 2
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 418.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 75.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Browse'
+      OnClick = BrowseClick
+    end
+    object EditPath: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 2
+      ReadOnly = True
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 388.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = ' Language file path here...'
+    end
+    object Ok: TButton
+      Align = Right
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 513.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 60.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Load'
+      OnClick = OkClick
+    end
+  end
+  object OpenDialog: TOpenDialog
+    DefaultExt = '.json'
+    Filter = '*.json'
+    Left = 488
+    Top = 104
+  end
+  object StringGrid: TStringGrid
+    Align = Client
+    CanFocus = True
+    ClipChildren = True
+    Margins.Left = 15.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 15.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Size.Width = 563.000000000000000000
+    Size.Height = 196.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    RowCount = 0
+    Options = [Editing, ColumnResize, ColLines, RowLines, Tabs, Header, AutoDisplacement]
+    Viewport.Width = 559.000000000000000000
+    Viewport.Height = 171.000000000000000000
+    object StringColumn1: TStringColumn
+      Header = 'Default'
+      ReadOnly = True
+    end
+  end
+  object Layout2: TLayout
+    Align = Bottom
+    Margins.Left = 15.000000000000000000
+    Margins.Right = 15.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Position.X = 15.000000000000000000
+    Position.Y = 361.000000000000000000
+    Size.Width = 563.000000000000000000
+    Size.Height = 35.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object GridPanelLayout1: TGridPanelLayout
+      Align = Client
+      Size.Width = 563.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      ColumnCollection = <
+        item
+          Value = 50.000000000000000000
+        end
+        item
+          Value = 50.000000000000000000
+        end>
+      ControlCollection = <
+        item
+          Column = 0
+          Control = Layout3
+          Row = 0
+        end
+        item
+          Column = 1
+          Control = Layout4
+          Row = 0
+        end>
+      RowCollection = <
+        item
+          Value = 100.000000000000000000
+        end
+        item
+          SizeStyle = Auto
+        end>
+      object Layout3: TLayout
+        Align = Client
+        Size.Width = 281.500000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object AddLanguage: TButton
+          Align = Right
+          Enabled = False
+          Images = ImageList
+          ImageIndex = 0
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 211.500000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 60.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'ADD'
+          OnClick = AddLanguageClick
+        end
+        object NewLangName: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 2
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Size.Width = 181.500000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = ' New language...'
+        end
+      end
+      object Layout4: TLayout
+        Align = Client
+        Size.Width = 281.500000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object DeleteButton: TButton
+          Align = Right
+          Enabled = False
+          Images = ImageList
+          ImageIndex = 1
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 196.500000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 75.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'DELETE'
+          OnClick = DeleteButtonClick
+        end
+        object Defaults: TComboEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 1
+          ItemHeight = 19.000000000000000000
+          Items.Strings = (
+            'Select language')
+          ItemIndex = 0
+          Text = 'Select language'
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Size.Width = 166.500000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+    end
+  end
+  object Layout5: TLayout
+    Align = Bottom
+    Margins.Left = 15.000000000000000000
+    Margins.Right = 15.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Position.X = 15.000000000000000000
+    Position.Y = 406.000000000000000000
+    Size.Width = 563.000000000000000000
+    Size.Height = 35.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object GridPanelLayout2: TGridPanelLayout
+      Align = Client
+      Size.Width = 563.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      ColumnCollection = <
+        item
+          Value = 50.000000000000000000
+        end
+        item
+          Value = 50.000000000000000000
+        end>
+      ControlCollection = <
+        item
+          Column = 0
+          Control = Layout6
+          Row = 0
+        end
+        item
+          Column = 1
+          Control = Layout7
+          Row = 0
+        end>
+      RowCollection = <
+        item
+          Value = 100.000000000000000000
+        end
+        item
+          SizeStyle = Auto
+        end>
+      object Layout6: TLayout
+        Align = Client
+        Size.Width = 281.500000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object AddNewWord: TButton
+          Align = Right
+          Enabled = False
+          Images = ImageList
+          ImageIndex = 0
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 211.500000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 60.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'ADD'
+          OnClick = AddNewWordClick
+        end
+        object NewWord: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 2
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Size.Width = 181.500000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = ' New word...'
+        end
+      end
+      object Layout7: TLayout
+        Align = Client
+        Size.Width = 281.500000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object DeleteWord: TButton
+          Align = Right
+          Enabled = False
+          Images = ImageList
+          ImageIndex = 1
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 196.500000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 75.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'DELETE'
+          OnClick = DeleteWordClick
+        end
+        object Words: TComboEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 1
+          ItemHeight = 19.000000000000000000
+          Items.Strings = (
+            'Select word')
+          ItemIndex = 0
+          Text = 'Select word'
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Size.Width = 166.500000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+    end
+  end
+  object Layout8: TLayout
+    Align = Bottom
+    Position.Y = 451.000000000000000000
+    Size.Width = 593.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+    object Rectangle1: TRectangle
+      Align = Client
+      Fill.Color = xFF222222
+      Size.Width = 593.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object SaveEdits: TButton
+        Align = Center
+        Enabled = False
+        Images = ImageList
+        ImageIndex = 3
+        Size.Width = 100.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Save Edits'
+        OnClick = SaveEditsClick
+      end
+    end
+  end
+  object Layout9: TLayout
+    Align = Top
+    Margins.Left = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Position.X = 5.000000000000000000
+    Position.Y = 50.000000000000000000
+    Size.Width = 583.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 14
+    object Button1: TButton
+      Align = Center
+      Images = ImageList
+      ImageIndex = 0
+      Size.Width = 160.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'NEW LANGUAGE FILE'
+      OnClick = Button1Click
+    end
+  end
+  object ImageList: TImageList
+    Source = <
+      item
+        MultiResBitmap.LoadSize = 0
+        MultiResBitmap = <
+          item
+            Width = 16
+            Height = 16
+            PNG = {
+              89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+              61000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              013849444154384FCD91CF4AC34010C6BFA4A945E8497D01F1E07B140FFA125E
+              7A12A2087AB76711A55A83BDF62C9E457C08F1925810A4A9781302D5A6CD9F71
+              66B316245D3CEA0F8699CCEE7C3393C59F63695F627BB745EFA354C54B7507BD
+              8BD6DCBBB6F625A4D8755D65DF42F3300AA4560DB9652B93D8845120430DC4C7
+              62129B70B42F76FE9822C52212E9CE39B28AB5658A46F3841C4C50C514CB751B
+              BDF6913A9C09C89EFB078748728B8B2BC832622FBBDBD873774044AC98F0578A
+              AED7298A981F2BC4718CD77088C1608070C83E7CC3D3F30B827E1F4110C0F77D
+              4451042B6731CD6C0279AAEEA5A7C617233EDADCDAE0AE55DCDEDDF37BE77068
+              C2D93156F8EEAF349AA774F3F049C7D78F24B14E9730BE8274521D7557134681
+              857C8C0A65585F5B55B109A380FC13EFFC0C579DB68AFF2BC017E97081486BC1
+              32D80000000049454E44AE426082}
+            FileName = 
+              'C:\Users\AlbertoMiola\Desktop\Programmazione\Delphi\TLanguages\E' +
+              'ditor\laz_add.png'
+          end>
+        Name = '0'
+      end
+      item
+        MultiResBitmap.LoadSize = 0
+        MultiResBitmap = <
+          item
+            Width = 16
+            Height = 16
+            PNG = {
+              89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+              61000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              023F49444154384FAD92C14EDB301CC6BFD86993B44D4A59C54627544D9CA622
+              F106A0EEC081D34E1BDA012E1B074E48485CFB0A7B055E64130FC02D13276823
+              289D36A0216DDAA4899DD9591454384DDA27FD15DBF1EFB3FDD9F85725FBFBA5
+              AC998A64DF54FCE8A8C98F8F5B59F799C2DDCFADD0F7BF4C3E7CDAC8861E0D24
+              ACA85A0FA0363F3C7C6612EEEEB6120A5B31AB5FA35978E06DBF7F2BC753831C
+              D63440D79128AA1D1E1CE426292CC668A58C62BD0EAD5AFD18B3702BE9748822
+              2788863EFD75E7EBB51A514C13DCF3C05D17DC0FD6801912B12B629928585504
+              FD6B3C747BECA5EF19CAD959941A48257B1DDDAF0CC78661502226B20717F1F0
+              1E4914830AD342D54270DD87DBEBB180249537A7A781E47203A9646F4FF7546D
+              5C2A95A85A5B001817E793C5C4CA1276584091C35273B7A09C9C04561C5646FD
+              3E47C4809EC8B4DB15460CEE95C39FC252730652E33059350C9D80C5401401B1
+              F88A3234835871BC9A4DCB356730DAD96951C26D6A88B7120BB8D110B59C1A88
+              E4A110D51EACAFCF5D719E410A2BD4564B6591B685E9E006AEE3304EA9B2505B
+              24E5C62B4C063F31B9B941EC8FD696CFCF7F482EDD410A8BAB52C5CA05B38C69
+              1A588F8545B51251A57C7771C146975D94EA2F60887740D4A2EDACACA63BF97B
+              84D96C29114923E1021E60E808582BA481C9E2FE62E5B67FC5BC8B4B1042C451
+              08088F97249A1F61B8B5DDA6C5C2B791E7F29982F2D3B4BBCDA6CE68616C9926
+              0D6FEFDFADF49DEFD9AF47FDDED868773737F5ACFB4CD2E4EA75B39D75FF8780
+              3FB75006A40942490A0000000049454E44AE426082}
+            FileName = 
+              'C:\Users\AlbertoMiola\Desktop\Programmazione\Delphi\TLanguages\E' +
+              'ditor\laz_cancel.png'
+          end>
+        Name = 'laz_cancel'
+      end
+      item
+        MultiResBitmap.LoadSize = 0
+        MultiResBitmap = <
+          item
+            Width = 16
+            Height = 16
+            PNG = {
+              89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+              61000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              027A49444154384F7D523D6B5441143D336FDEDBB7246E12108D01B5D2682C14
+              4452A881341662AD081662A5F80FACAC34A06040481751D1569B748A201A3182
+              600A3F08C92A212F980DF934FBBEDF8C67DE2A0464BDCBDD99B99C7BEE397757
+              A04D8CBF699824CF91E7BA7CCF042B6196191126D94210244FC238B8F3FEDE85
+              A82DC1D8ABC05C1DEEC3F2968605696390151ACA011E4DADE3E3D4C2446371F6
+              A26CC1FF8DA230580B0D66970DE65634661A05A617327456144EF57763E8F4BE
+              73D59EDEDB6D090CD3E1685F011E2F367D4FA2B11EA1BF07B83CD8850E25AFB7
+              25B02148E052B2E2A92C8192A8AF0ABCAD27D8880C5C29A1BE4C1CFFD4E11F18
+              10623B97C173EE4EF0E310548630D09ABA2A0E8464DD714A954A27CEA1BD679F
+              BAC28EB315FB65EF2F16D1DABFA5D1A51D8F0A0497A9356BC4F00A096962E814
+              49308AF0C77D84F38F11CD3FC3EB0F8BE5F6D9431BB2CC0AA756A442D57351A5
+              2F4306E545B9342428520F86129BF5496C7C9BC64837B0346EE7B784D993EB28
+              D367EA2BEFCAAA82AB7C9D47D8ACCF225B0DA0B3183D272E410D5C43AD833ECD
+              DFDD9896643EE7C60691E45BDC852F14326EB2BA0BBDC32304D135517489F0E7
+              43A4BF6C9B956A4978DA89B593259D276B884D982A34E9A488912E3D60B9DC22
+              43A31949A439906440961788F9889214DDBBD7281B387F73726987EB57556A95
+              69224BB396802A74865A859D5E024B0EDD842E3661F20DF87D67F09DA8977787
+              7A79F057682646A068351B9E9A4D3AE27F798B4F3615EBD0F91A4CC624413960
+              5B48D76895872B04B94C8F59E5B44E6617EF3B49B687DCFBA9B09FE86328622A
+              DA16E2F3ADC3D38554074BFBD6C6FFE20FC6D1F9CC911B5F8F02C06F635C3661
+              262308780000000049454E44AE426082}
+            FileName = 
+              'C:\Users\AlbertoMiola\Desktop\Programmazione\Delphi\TLanguages\E' +
+              'ditor\laz_open.png'
+          end>
+        Name = 'laz_open'
+      end
+      item
+        MultiResBitmap.LoadSize = 0
+        MultiResBitmap = <
+          item
+            Width = 16
+            Height = 16
+            PNG = {
+              89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+              61000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              024949444154384F85533D6B5441143DF3DEEC2E068DFB91ECAA89880AA615D4
+              408CDA0AF90716A2854D2C8216924A1B2B2B11D1662D04B113AC431AAB148A58
+              04C1422585D84848344B366FE7E37AEEBC156C56EFDBCBCCDC997BCF397766CD
+              ECCDD5DB021C13830B004E6408FB01B18035E0865A9E196474918830F0DBD59A
+              FDBCEBDD83F74F175E99D9C5D56E7779FE06603033554B391205034F773125EF
+              AB653006E8F523B67B857CFDD10B2F57BEFCFCB4B1B59C21938B9AF5FAED2F30
+              8F2882A5C7EF1075C1AC0A8928BA16ECB32032CB68D55EBB3CD3B2B5DA938C91
+              438AAA09CE47BAAE00C7B5CD910AE85E7F30DC23C09BF51D542B395CB1576501
+              3FE6158D34F4907AA67C19AA5852E75738EE154286EA04E3F87D738F6772C302
+              620303FCA12082FADDEBA753327F7041B05B44F818C944EBF2E3C4F9909A9ABA
+              1D831210DC7FFE81B2A999044A74F223A4A734E5F8C7EAF5260B501F7332DD89
+              AC1459A5DD99C264E70826DA8771B0D1C178A38D7AB383E604BDA5F3498CD75B
+              6C6E06E73C0B50AE560C64A012D48C4E744E78D5ABB7A2817290B42F0473AE94
+              900AF84071292B29D4503AACC9AA378D439691EBC0B1708E67520F84018502EE
+              5D992E93FF6377BA1FD997B2A8D52B53028A4C203C5AE3A3FC872DCD7529D9A7
+              87A50936692503EDB8DAF9E9ABC3D9688B440C7C1B9CC18A38A104E66B0058FB
+              F6228DA3ECECD14B64C026F27D68AE75C16E0C7C3C7EE6E458FAC3DC9A7F363C
+              3ADA3A07C88005E0B165CE2DAE3C24FA29F19833B9349456BA3A36489BF4F7A8
+              9ACB6B753C9EEF5883F5DFFA06711B9077CBA00000000049454E44AE426082}
+            FileName = 
+              'C:\Users\AlbertoMiola\Desktop\Programmazione\Delphi\TLanguages\E' +
+              'ditor\laz_save.png'
+          end>
+        Name = 'laz_save'
+      end>
+    Destination = <
+      item
+        Layers = <
+          item
+            Name = '0'
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'laz_cancel'
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'laz_open'
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'laz_save'
+          end>
+      end>
+    Left = 384
+    Top = 152
+  end
+  object SaveDialog: TSaveDialog
+    DefaultExt = '.json'
+    FileName = 'language_file'
+    Filter = 'JSON format file|*.json'
+    Left = 421
+    Top = 58
+  end
+end

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/10/04 23:45:06.000.477,=rtl.dcp</Transaction>
+    <Transaction>2017/10/04 23:45:11.000.231,=C:\Users\AlbertoMiola\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/10/04 23:45:23.000.890,C:\Users\AlbertoMiola\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\AlbertoMiola\Desktop\Programmazione\Delphi\TLanguages\Component\uLanguages.pas</Transaction>
+    <Transaction>2017/10/04 23:45:27.000.268,C:\Users\AlbertoMiola\Documents\Embarcadero\Studio\Projects\Package1.dproj=C:\Users\AlbertoMiola\Desktop\Programmazione\Delphi\TLanguages\Component\ProjectLanguages.dproj</Transaction>
+    <Transaction>2018/01/13 14:38:35.284,=C:\Users\AlbertoMiola\Desktop\Programmazione\Delphi\TLanguages\Component\uLanguages.bmp</Transaction>
+  </Transactions>
+</BorlandProject>
