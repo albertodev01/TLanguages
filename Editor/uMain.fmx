@@ -436,7 +436,7 @@ object FormMain: TFormMain
               857C8C0A65585F5B55B109A380FC13EFFC0C579DB68AFF2BC017E97081486BC1
               32D80000000049454E44AE426082}
             FileName = 
-              'C:\Users\AlbertoMiola\Desktop\Programmazione\Delphi\TLanguages\E' +
+              'C:\Users\Alberto01\Desktop\Programmazione\Delphi\TLanguages\E' +
               'ditor\laz_add.png'
           end>
         Name = '0'
@@ -470,7 +470,7 @@ object FormMain: TFormMain
               0D6FEFDFADF49DEFD9AF47FDDED868773737F5ACFB4CD2E4EA75B39D75FF8780
               3FB75006A40942490A0000000049454E44AE426082}
             FileName = 
-              'C:\Users\AlbertoMiola\Desktop\Programmazione\Delphi\TLanguages\E' +
+              'C:\Users\Alberto01\Desktop\Programmazione\Delphi\TLanguages\E' +
               'ditor\laz_cancel.png'
           end>
         Name = 'laz_cancel'
@@ -506,7 +506,7 @@ object FormMain: TFormMain
               DA16E2F3ADC3D38554074BFBD6C6FFE20FC6D1F9CC911B5F8F02C06F635C3661
               262308780000000049454E44AE426082}
             FileName = 
-              'C:\Users\AlbertoMiola\Desktop\Programmazione\Delphi\TLanguages\E' +
+              'C:\Users\Alberto01\Desktop\Programmazione\Delphi\TLanguages\E' +
               'ditor\laz_open.png'
           end>
         Name = 'laz_open'
@@ -540,7 +540,7 @@ object FormMain: TFormMain
               3ADA3A07C88005E0B165CE2DAE3C24FA29F19833B9349456BA3A36489BF4F7A8
               9ACB6B753C9EEF5883F5DFFA06711B9077CBA00000000049454E44AE426082}
             FileName = 
-              'C:\Users\AlbertoMiola\Desktop\Programmazione\Delphi\TLanguages\E' +
+              'C:\Users\Alberto01\Desktop\Programmazione\Delphi\TLanguages\E' +
               'ditor\laz_save.png'
           end>
         Name = 'laz_save'
