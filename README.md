@@ -53,3 +53,4 @@ begin
 
 end;
 ```
+The `.json` file with the localizations will be attached to you executable and it will increase the final size but consider that a json file is basically a text file with some chars inside so it's not huge. In a project of mine there are 4 languages with 50 words each and the file size it's less than 5 kb.
