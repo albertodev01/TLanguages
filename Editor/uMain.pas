@@ -244,7 +244,7 @@ end;
 procedure TFormMain.DeleteButtonClick(Sender: TObject);
 begin
 
- if Defaults.Items.Count > 1 then
+ if (Defaults.Items.Count > 1) then
   begin
    StringGrid.Columns[Defaults.ItemIndex].DisposeOf;
    Defaults.Items.Delete(Defaults.ItemIndex);
