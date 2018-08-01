@@ -50,32 +50,24 @@ function TLanguage.localize(const id: string): string;
 var
  FValue, FValueInner, FValueData: TJSONValue;
 begin
-
  Result := '';
 
  try
-
   for FValue in FIds do
    begin
-
     if (FValue is TJSONObject) then
      begin
-
       FValueInner := TJSONObject(FValue).Values[FCurrLang];
       if (FValueInner is TJSONArray) then
        begin
-
         for FValueData in TJSONArray(FValueInner) do
          begin
           Result := FvalueData.GetValue<string>(id);
          end;
-
        end;
-
      end;
-
    end;
-
+   
  except
   Result := '-';
  end;
@@ -92,23 +84,18 @@ var
  rs: TResourceStream;
  sl: TStringList;
 begin
-
  FLang := resName;
 
  //in System.Types > const RT_RCDATA = PChar(10);
  rs := TResourceStream.Create(HInstance, FLang, PChar(10));
  try
-
   sl := TStringList.Create;
   try
-
     sl.LoadFromStream(rs, TEncoding.UTF8);
     FIds := TJSONObject.ParseJSONValue(sl.Text) as TJSONArray;
-
   finally
    sl.Free;
-  end;
-
+  end
  finally
   rs.Free;
  end;
